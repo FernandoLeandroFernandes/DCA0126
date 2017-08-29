@@ -1,0 +1,49 @@
+[System]
+Name='Fuzzy2'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='erro'
+Range=[-30 30]
+NumMFs=3
+MF1='EZ':'trimf',[-5 -1.15 3]
+MF2='EN':'trapmf',[-543 -87 -15 -3.5]
+MF3='EP':'trapmf',[2 15 87 543]
+
+[Input2]
+Name='Varerro'
+Range=[-1 1]
+NumMFs=3
+MF1='VEZ':'trimf',[-0.15 0 0.08]
+MF2='VEP':'trimf',[0.06 1 5]
+MF3='VEN':'trimf',[-10 -1 -0.08]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=5
+MF1='Subir':'linear',[0.1 1.5 0]
+MF2='Descer':'linear',[0.3 3.5 0]
+MF3='Manter':'linear',[0.045 1.4 0]
+MF4='Subida-rapida':'linear',[0.3 10 0]
+MF5='Descida-rapida':'linear',[0.5 10 0]
+
+[Rules]
+2 3, 5 (1) : 1
+2 1, 2 (1) : 1
+2 2, 2 (1) : 1
+1 3, 3 (1) : 1
+1 1, 3 (1) : 1
+1 2, 3 (1) : 1
+3 3, 1 (1) : 1
+3 1, 1 (1) : 1
+3 2, 4 (1) : 1

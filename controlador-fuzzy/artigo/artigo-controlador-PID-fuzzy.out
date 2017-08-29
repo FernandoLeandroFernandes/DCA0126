@@ -1,0 +1,20 @@
+\BOOKMARK [1][-]{section.1}{Introdu\347\343o}{}% 1
+\BOOKMARK [1][-]{section.2}{Referencial Te\363rico}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Conjuntos Nebulosos}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Controladores Fuzzy}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Controlador Mamdani}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{M\351todos de defuzifica\347\343o}{section.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Centro de \341rea \(CoA\)}{subsection.2.4}% 7
+\BOOKMARK [3][-]{subsubsection.2.4.2}{M\351dia dos m\341ximos \(MoM\)}{subsection.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Controlador Sugeno}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Implementa\347\343o computacional}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{O problema}{}% 11
+\BOOKMARK [1][-]{section.4}{Metodologia}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Modelo Sugeno}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Modelo Mamdani}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Resultados}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{Mamdani - melhor resultado}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Mamdani - outros testes}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.3}{Sugeno - melhor resultado}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.4}{Outros testes - Sugeno}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Conclus\365es}{}% 20

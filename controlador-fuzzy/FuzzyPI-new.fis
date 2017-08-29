@@ -1,0 +1,40 @@
+[System]
+Name='FuzzyPI-new'
+Type='sugeno'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=3
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='wtaver'
+
+[Input1]
+Name='erro'
+Range=[-30 30]
+NumMFs=3
+MF1='EN':'trimf',[-3000 -30 0]
+MF2='EZ':'trimf',[-5 2.94 5]
+MF3='EP':'trimf',[2 30 3000]
+
+[Input2]
+Name='Varerro'
+Range=[-1 1]
+NumMFs=3
+MF1='VEN':'trimf',[-2 -1 0]
+MF2='VEZ':'trimf',[-0.2 0 0.2]
+MF3='VEP':'trimf',[0 1 2]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=2
+MF1='STRONG':'linear',[0.0065 20 0]
+MF2='KEEP':'linear',[0.0008 0.05 0]
+
+[Rules]
+1 0, 1 (1) : 1
+2 0, 2 (1) : 1
+3 0, 1 (1) : 1
